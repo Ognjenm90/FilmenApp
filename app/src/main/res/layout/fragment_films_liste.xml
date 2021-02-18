@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrau">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/lightGrau"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/lightGrau"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <Button
+                    android:id="@+id/Bgenres"
+                    android:layout_width="0dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/drawable_button"
+                    android:text="Genres" />
+
+                <Button
+                    android:id="@+id/Bregisseurs"
+                    android:layout_width="0dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/drawable_button"
+                    android:text="Regisseurs" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp">
+
+                <Button
+                    android:id="@+id/BaddGenre"
+                    android:layout_width="0dp"
+                    android:layout_height="58dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_button"
+                    android:enabled="false"
+                    android:text="Genre hinzufügen" />
+
+                <Button
+                    android:id="@+id/BaddFilm"
+                    android:layout_width="0dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_button"
+                    android:text="Film hinzufügen" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/textFind"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3" />
+
+                <Button
+                    android:id="@+id/dSuchen"
+                    android:layout_width="0dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/drawable_button"
+                    android:text="Suchen" />
+            </LinearLayout>
+
+
+            <ListView
+                android:layout_marginTop="8dp"
+
+                android:background="@color/lightGrau"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/genreListe"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
